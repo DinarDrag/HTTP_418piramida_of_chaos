@@ -205,7 +205,7 @@ def start_server():
     try:
         while True:
             conn, addr = server_socket.accept()
-            # Проверяем, не занят ли сервер
+            # Проверяем,nda не занят ли сервер
             if busy:
                 # Сервер занят — отправим ответ и закроем соединение
                 print(f"[SERVER] Новый клиент {addr}, но сервер занят. Отклоняем.")
